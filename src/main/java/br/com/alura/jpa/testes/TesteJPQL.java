@@ -10,7 +10,6 @@ import javax.persistence.TypedQuery;
 import br.com.alura.jpa.modelo.Conta;
 import br.com.alura.jpa.modelo.Movimentacao;
 
-//importações omitidas
 
 public class TesteJPQL {
   public static void main(String[] args) {
@@ -26,7 +25,7 @@ public class TesteJPQL {
       List<Movimentacao> resultList = query.getResultList();
 
       for (Movimentacao movimentacao : resultList) {
-          System.out.println("Descrição: " + movimentacao.getDescricao());
+          System.out.println("Descriï¿½ï¿½o: " + movimentacao.getDescricao());
           System.out.println("Valor: " + movimentacao.getValor());
           System.out.println("Tipo: " + movimentacao.getTipoMovimentacao());
       }
